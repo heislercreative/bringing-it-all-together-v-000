@@ -23,6 +23,10 @@ class Dog
     dog
   end
   
+  def self.update
+    
+  end
+  
   def self.find_or_create_by(name:, breed:)
     
   end
