@@ -29,6 +29,7 @@ class Dog
       SET name = ?, breed = ?
       WHERE id = ?
     SQL
+    DB[:conn].execute(sql, name, breed, id)
   end
   
   def self.find_or_create_by(name:, breed:)
