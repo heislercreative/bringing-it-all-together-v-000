@@ -11,6 +11,13 @@ class Dog
     
   end
   
+  def self.new_from_db(row)
+    id = row[0]
+    name = row[1]
+    breed = row[2]
+    self.new(name, breed, id)
+  end
+  
   def self.create_table
     sql = <<-SQL
       CREATE TABLE IF NOT EXISTS dogs (
