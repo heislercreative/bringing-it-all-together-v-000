@@ -48,7 +48,7 @@ class Dog
     SQL
     DB[:conn].execute(sql, id).collect do |row|
       self.new_from_db(row)
-    end.first
+    end
   end
   
   def self.create_table
