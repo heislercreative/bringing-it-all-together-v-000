@@ -15,7 +15,7 @@ class Dog
     id = row[0]
     name = row[1]
     breed = row[2]
-    self.new(name, breed, id)
+    self.new(id: id, name: name, breed: breed)
   end
   
   def self.create_table
