@@ -23,7 +23,9 @@ class Dog
     dog
   end
   
-  def self.find_or_create_by
+  def self.find_or_create_by(name:, breed:)
+    self.find_by_name(name: name, breed: breed) || self.create(name: name, breed: breed)
+  end
   
   def self.new_from_db(row)
     id = row[0]
