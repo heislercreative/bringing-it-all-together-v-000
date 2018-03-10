@@ -1,6 +1,5 @@
 def Dog
-  attr_accessor :name, :breed
-  attr_writer :id
+  attr_accessor :name, :breed, :id
   
   def initialize(name:, breed:, id: nil)
     @id = id
